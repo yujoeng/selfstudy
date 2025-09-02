@@ -8,3 +8,25 @@
 
 직각 삼각형의 두 변의 길이가 주어졌을 때, 한 변의 길이를 구하는 프로그램을 작성하시오.
 '''
+
+
+cnt = 0         # 삼각형 번호를 매기기 위한 카운터 변수 cnt를 0으로 초기화 
+while True:
+    cnt += 1
+    a,b,c = map(int, input().split())
+    if a == 0 and b == 0 and c == 0:
+        break
+    if cnt > 1:
+        print()
+    if c == -1:
+        print(f"Triangle #{cnt}")
+        print("c = %.3f" % ((a**2+b**2)**0.5))
+    elif max(a, b) >= c:
+        print(f"Triangle #{cnt}")
+        print('Impossible.')
+    elif a == -1:
+        print(f"Triangle #{cnt}")
+        print("a = %.3f" % ((c**2-b**2)**0.5))
+    elif b == -1:
+        print(f"Triangle #{cnt}")
+        print("b = %.3f" % ((c**2-a**2)**0.5))
