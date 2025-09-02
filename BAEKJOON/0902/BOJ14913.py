@@ -15,5 +15,23 @@
 
 '''
 
-a, d, k = map(int, input().split)
+# a, d, k = map(int, input().split)
 
+# if (k - a) % d == 0 and (k - a) // d >= 0:  
+#     print((k - a) // d + 1)
+# else:
+#     print("X")
+
+a, d, k = map(int, input().split())
+if (k - a) % d == 0 and (k - a) // d >= 0:
+    print((k - a) // d + 1)
+else:
+    print("X")
+
+
+'''
+(k - a) % d == 0 -> k 가 등차수열의 항인지 확인
+(k - a) // d >= 0 -> 항 번호가 1 이상인지 확인 
+
+코드 보다는 수학적 개념을 필요로 하는 문제 같다고 느낌
+'''
