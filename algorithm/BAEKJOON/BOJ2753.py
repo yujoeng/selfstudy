@@ -27,10 +27,10 @@ years = int(input()) # 연도 입력받기
 # 윤년이다. print('1')
 # 또는 400의 배수일 때 years % 400 print('1')
 
-if years %4 and years % 100 !=0 :
+if years %4 ==0 and years % 100 !=0 :
     print('1')
 
-elif years % 400 :
+elif years % 400 == 0:
     print('1')
 
 else:
