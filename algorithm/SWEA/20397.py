@@ -19,8 +19,8 @@ i번째 돌을 사이에 두고 마주보는 j개의 돌에 대해, 각각 같�
 
 t = int(input())
 for tc in range(1, t+1):
-    N, M = map(int, input().split())
-    stones = list(map(int,input().split()))
+    N, M = map(int, input().split()) # N - 돌의 수 , M - 뒤집기 횟수 
+    stones = list(map(int,input().split()))  # N개의 돌의 초기상태 
 
     for _ in range(M):
         i, j = map(int, input().split()) # i는 기준 돌, j는 확인할 최대 거리 
@@ -38,4 +38,4 @@ for tc in range(1, t+1):
 
     print(f'#{tc}', *stones)
 
-        
+

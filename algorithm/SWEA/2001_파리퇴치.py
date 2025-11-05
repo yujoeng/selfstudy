@@ -62,23 +62,8 @@ for tc in range(1, T + 1):
 
 
 
-'''
 T = int(input())
 
 for tc in range(1, T+1):
-    N, M = map(int, input().split())  
-    arr = [list(map(int, input().split())) for _ in range(N)]
-
-    max_v = 0
-    for i in range(N - M + 1): #한번에 잡은 최대 파리 수 
-        for j in range(N - M + 1): # i, j 파리채의 좌상단 인덱스 
-            cnt = 0  # 한번의 잡는 파리의 수 
-            for p in range(M): # p,q 파리채에 해당하는 영역 크기
-                for q in range(M):
-                    cnt += arr[i+p][j+q]  # i+p, j+q 파리채의 실제 영역
-            if max_v < cnt: # 최대보다 크면 
-                max_v = cnt # 갱신
-    
-    print(f'#{tc} {max_v}')
-
-'''
+    N, M = map(int, input().split())
+    arr = [list(map(int, input().split())for _ in range(N))]
