@@ -16,4 +16,4 @@ for tc in range(1, T + 1):
 
 
 
-    print(f'#{tc} {max_v}')
+print(f'#{tc} {max_v}')
